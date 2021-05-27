@@ -1,0 +1,220 @@
+$cookies_color1: #FFFFFF;
+$cookies_color2: #A9A9A9;
+$cookies_color3: #000000;
+$cookies_color4: #3274B1;
+$cookies_color5: #3098CF;
+$max_width: 1280px;
+#cajaCookies * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+#cajaCookies {
+  background-color: $cookies_color1;
+  border: none;
+  bottom: 0;
+  -webkit-box-shadow: 0 0 1em $cookies_color2;
+  box-shadow: 0 0 1em $cookies_color2;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #545454;
+  display: none;
+  font-size: 13px;
+  left: 0;
+  padding: 0 10px;
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+}
+#cajaCookies h2, #cajaCookies h3 {
+  color: $cookies_color3;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+}
+#cajaCookies strong {
+  color: $cookies_color3;
+}
+#cajaCookies a {
+  color: $cookies_color3;
+  text-decoration: underline;
+}
+#cajaCookies #contenedorCookies {
+  align-items: flex-end;
+  -webkit-box-align: end;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $max_width;
+  padding: 0;
+  width: 100%;
+}
+#cajaCookies #formCookies {
+  align-items: center;
+  border: 0.1em solid $cookies_color2;
+  border-radius: .25rem;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#cajaCookies #formCookies form {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#cajaCookies .checkbox {
+  position: relative;
+  color: $cookies_color3;
+}
+#cajaCookies .checkbox > input[type="checkbox"] {
+  display: none;
+}
+#cajaCookies .checkbox > label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 10px 0;
+  padding-left: 1.5em;
+  position: relative;
+}
+/*---caja checkbox--*/
+#cajaCookies .checkbox > label:before {
+  background-color: $cookies_color1;
+  border: 0.1em solid $cookies_color2;
+  border-radius: .25rem;
+  content: "";
+  display: block;
+  height: 1em;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1em;
+}
+#cajaCookies .checkbox > label#botonInfoCookies:before {
+  display: none;
+}
+/*-----check checkbox-----*/
+#cajaCookies input[name="necesarias"]:checked + label[for="necesarias"]:after,
+#cajaCookies input[name="analiticas"]:checked + label[for="analiticas"]:after {
+  border-bottom: 0.2em solid $cookies_color4;
+  border-right: 0.2em solid $cookies_color4;
+  content: "";
+  display: block;
+  height: 0.8em;
+  left: 0.4em;
+  position: absolute;
+  top: 0;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 0.3em;
+}
+#cajaCookies input[type="submit"] {
+  background-color: $cookies_color4;
+  color: $cookies_color1;
+  font-weight: bold;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5;
+  margin: 10px 10px 10px 5vw;
+  padding: .375rem .75rem;
+  text-align: center;
+  text-transform: uppercase;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+#cajaCookies input[type="submit"]:hover {
+  background-color: $cookies_color5;
+}
+#cajaCookies #infoCookies {
+  background-color: $cookies_color1;
+  height: 0;
+  margin: 0 auto;
+  max-width: $max_width;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 10vw 10px 0;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+}
+#cajaCookies #botonInfoCookies {
+  color: $cookies_color3;
+  display: inline-block;
+  margin: 0 0 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+#cajaCookies input[name="masCookies"]:checked ~ #infoCookies {
+  display: block;
+  height: auto;
+  opacity: 1;
+}
+#cajaCookies #cajaCookiesTitulo {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $max_width;
+  padding: 10px 0 0;
+  width: 100%;
+}
+#cajaCookies .borderCookies {
+  border: 0.1em solid $cookies_color2;
+  margin-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 599px) {
+  #cajaCookies {
+    bottom: auto;
+    position: absolute;
+    top: 0;
+  }
+  #cajaCookies #contenedorCookies {
+    display: block;
+  }
+  #cajaCookies input[type="submit"] {
+    margin: auto;
+    width: 100%;
+  }
+  #cajaCookies #infoCookies {
+    padding: 10px 25px 10px 25px;
+  }
+}

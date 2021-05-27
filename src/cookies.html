@@ -1,0 +1,56 @@
+<script src="/inc/cookies.min.js"></script>
+<link rel="stylesheet" href="/inc/cookies.min.css">
+<div id="cajaCookies">
+  <div id="cajaCookiesTitulo">
+    <h3>Esta página web usa cookies</h3>
+  </div>
+  <div id="contenedorCookies">
+    <div>
+      <p>Este sitio web utiliza cookies para obtener datos estadísticos de la navegación de sus usuarios. Si pulsas en "ACEPTAR" (o continuas navegando en la página web) entendemos que consientes al uso de cookies. Si quieres, puedes
+        <label for="masCookies" id="botonInfoCookies">cambiar tus preferencias</label>
+        o <a href="/pdf/politica-de-cookies.pdf" target="_blank">ampliar esta información</a>.
+      </p>
+    </div>
+    <div>
+      <input class="btn btn-small" id="allowCookies" type="submit" value="Aceptar">
+    </div>
+  </div>
+  <div class="checkbox" id="cajaMasInfo">
+    <input id="masCookies" name="masCookies" type="checkbox">
+    <div for="masCookies" id="infoCookies">
+      <p>Esta landing page utiliza cookies para el correcto funcionamiento y visualización de los sitios Web por parte del usuario, así como la recogida de datos estadísticos y analiticos sobre la navegación de los usuarios,
+        <strong>utiliza las siguientes cookies:</strong></p>
+      <div class="borderCookies">
+        <h3>
+          <div class="checkbox">
+            <input checked disabled id="necesarias" name="necesarias" type="checkbox">
+            <label for="necesarias">Necesarias</label>
+          </div>
+        </h3>
+        <p>Las cookies necesarias ayudan a hacer una página web utilizable activando funciones básicas como la navegación en la página y el acceso a áreas seguras de la página web. La página web no puede funcionar adecuadamente sin estas cookies.</p>
+      </div>
+      <div class="borderCookies">
+        <h3>
+          <div class="checkbox">
+            <input checked id="analiticas" name="analiticas" type="checkbox">
+            <label for="analiticas">Analíticas</label>
+          </div>
+        </h3>
+        <p>Estas Cookies recopilan información de tu experiencia de navegación en nuestros portales web de forma totalmente anónima. - Podemos contabilizar el número de visitantes de la página o los contenidos más vistos.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  function enableAnalytics() {
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+      var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MQX9786');
+    console.log('[z:analytics:1]');
+  }
+</script>

@@ -1,5 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="/Users/zguillez/Documentos/Repositorios/cookies-popup/__tests__/AppTest.js">
+    <testCase name="cookies class" duration="1"/>
+    <testCase name="isCookiesAllowed" duration="2"/>
+    <testCase name="initAllowCookiesClick" duration="0"/>
+    <testCase name="initAllowCookiesScroll" duration="3">
+      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "00"
+Received: "11"
+    at Object.<anonymous> (/Users/zguillez/Documentos/Repositorios/cookies-popup/__tests__/AppTest.js:35:38)
+    at Promise.then.completed (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/utils.js:316:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/utils.js:241:10)
+    at _callCircusTest (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at _runTest (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/run.js:66:9)
+    at run (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:166:21)
+    at jestAdapter (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-runner/build/runTest.js:386:16)
+    at runTest (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-runner/build/runTest.js:478:34)
+    at TestRunner.runTests (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-runner/build/index.js:111:12)
+    at TestScheduler.scheduleTests (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/@jest/core/build/TestScheduler.js:347:13)
+    at runJest (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/@jest/core/build/runJest.js:387:19)
+    at _run10000 (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/@jest/core/build/cli/index.js:408:7)
+    at runCLI (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/@jest/core/build/cli/index.js:261:3)
+    at Object.run (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-cli/build/cli/index.js:163:37)]]></failure>
+    </testCase>
+    <testCase name="initAllowCookiesInputs" duration="2">
+      <failure message="TypeError: Cannot read property &apos;addEventListener&apos; of null"><![CDATA[TypeError: Cannot read property 'addEventListener' of null
+    at Cookies.initAllowCookiesInputs (/Users/zguillez/Documentos/Repositorios/cookies-popup/src/cookies.js:57:10)
+    at Object.<anonymous> (/Users/zguillez/Documentos/Repositorios/cookies-popup/__tests__/AppTest.js:43:11)
+    at Promise.then.completed (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/utils.js:316:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/utils.js:241:10)
+    at _callCircusTest (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/run.js:218:40)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at _runTest (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/run.js:66:9)
+    at run (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:166:21)
+    at jestAdapter (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-runner/build/runTest.js:386:16)
+    at runTest (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-runner/build/runTest.js:478:34)
+    at TestRunner.runTests (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-runner/build/index.js:111:12)
+    at TestScheduler.scheduleTests (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/@jest/core/build/TestScheduler.js:347:13)
+    at runJest (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/@jest/core/build/runJest.js:387:19)
+    at _run10000 (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/@jest/core/build/cli/index.js:408:7)
+    at runCLI (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/@jest/core/build/cli/index.js:261:3)
+    at Object.run (/Users/zguillez/Documentos/Repositorios/cookies-popup/node_modules/jest-cli/build/cli/index.js:163:37)]]></failure>
+    </testCase>
   </file>
 </testExecutions>

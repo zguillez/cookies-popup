@@ -11,13 +11,22 @@ class Cookies {
   }
 
   /**
-   * inicializa los eventos del dom
+   * Inicializa los eventos del dom
    */
   init() {
     window.addEventListener('load', () => this.initAllowCookies());
     document.getElementById('allowCookies').addEventListener('click', (e) => this.initAllowCookiesClick(e));
     document.addEventListener('scroll', () => this.initAllowCookiesScroll());
     document.querySelectorAll('input').forEach((item) => this.initAllowCookiesInputs(item));
+  }
+
+  /**
+   * Resetea la selección de cookies
+   */
+  reset() {
+    this._cookiesAllowed = '00';
+    this._analiticas.checked = true;
+    localStorage.setItem('cookies', this._cookiesAllowed);
   }
 
   /**
@@ -103,6 +112,7 @@ class Cookies {
 document.addEventListener('DOMContentLoaded', () => (new Cookies()).init());
 window.analyticsEnabled = false;
 window.askCookies = (new Cookies()).askCookiesForce;
+window.resetCookies = (new Cookies()).reset();
 /**
  * modulo para poder hacer test
  * istanbul ignore next

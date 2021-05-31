@@ -8,6 +8,9 @@ $max_width: 1280px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: sans-serif;
+  line-height: 17px !important;
+  color: $cookies_color5;
+  font-size: 13px !important;
 }
 #cajaCookies {
   background-color: $cookies_color1;
@@ -17,9 +20,7 @@ $max_width: 1280px;
   box-shadow: 0 0 1em $cookies_color2;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #545454;
   display: none;
-  font-size: 13px;
   left: 0;
   padding: 0 10px;
   position: fixed;
@@ -27,16 +28,16 @@ $max_width: 1280px;
   z-index: 9999;
 }
 #cajaCookies h2, #cajaCookies h3 {
-  color: $cookies_color3;
-  font-size: 13px;
-  font-weight: bold;
+  color: $cookies_color3 !important;
+  font-weight: bold !important;
+  line-height: 22px !important;
   margin: 0;
 }
 #cajaCookies strong {
-  color: $cookies_color3;
+  color: $cookies_color3 !important;
 }
 #cajaCookies a {
-  color: $cookies_color3;
+  color: $cookies_color3 !important;
   text-decoration: underline;
 }
 #cajaCookies #contenedorCookies {
@@ -80,7 +81,7 @@ $max_width: 1280px;
 }
 #cajaCookies .checkbox {
   position: relative;
-  color: $cookies_color3;
+  color: $cookies_color3 !important;
 }
 #cajaCookies .checkbox > input[type="checkbox"] {
   display: none;
@@ -129,8 +130,9 @@ $max_width: 1280px;
   width: 0.3em;
 }
 #cajaCookies input[type="submit"] {
-  background-color: $cookies_color4;
-  color: $cookies_color1;
+  background-color: $cookies_color4 !important;
+  color: $cookies_color1 !important;
+  padding: 8px 16px;
   font-weight: bold;
   border: none;
   border-radius: .25rem;
@@ -138,7 +140,6 @@ $max_width: 1280px;
   display: inline-block;
   line-height: 1.5;
   margin: 10px 10px 10px 5vw;
-  padding: .375rem .75rem;
   text-align: center;
   text-transform: uppercase;
   -o-transition: all 0.5s;
@@ -168,9 +169,10 @@ $max_width: 1280px;
   width: 100%;
 }
 #cajaCookies #botonInfoCookies {
-  color: $cookies_color3;
+  color: $cookies_color3 !important;
+  font-weight: normal !important;
   display: inline-block;
-  margin: 0 0 10px;
+  margin: 0 5px;
   text-align: center;
   text-decoration: underline;
 }

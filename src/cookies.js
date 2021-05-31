@@ -14,6 +14,9 @@ class Cookies {
    * Inicializa los eventos del dom
    */
   init() {
+    window.analyticsEnabled = false;
+    window.askCookies = () => this.askCookiesForce();
+    window.resetCookies = () => this.reset();
     window.addEventListener('load', () => this.initAllowCookies());
     document.getElementById('allowCookies').addEventListener('click', (e) => this.initAllowCookiesClick(e));
     document.addEventListener('scroll', () => this.initAllowCookiesScroll());
@@ -53,7 +56,7 @@ class Cookies {
    * Evento de scroll en la página
    */
   initAllowCookiesScroll() {
-    if (this._html.scrollTop > 100) {
+    if (this._html.scrollTop > 100 && this._cookiesAllowed[0] === '0') {
       this.allowCookies();
     }
   }
@@ -109,10 +112,10 @@ class Cookies {
 /**
  * Se inicializa cuando el DOM está cargado
  */
-document.addEventListener('DOMContentLoaded', () => (new Cookies()).init());
-window.analyticsEnabled = false;
-window.askCookies = (new Cookies()).askCookiesForce;
-window.resetCookies = (new Cookies()).reset();
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('[z:cookies:1.0.5]');
+  (new Cookies()).init();
+});
 /**
  * modulo para poder hacer test
  * istanbul ignore next

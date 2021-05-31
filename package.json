@@ -1,6 +1,6 @@
 {
   "name": "cookies-popup",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "private": true,
   "description": "cookies popup for websites",
   "repository": "git@github.com:zguillez/cookies-popup.git",
